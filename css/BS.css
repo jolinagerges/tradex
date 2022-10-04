@@ -1,0 +1,295 @@
+* {
+  margin: 0;
+  padding: 0;
+  transition: all 0.1s ease-in-out;
+}
+
+html {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  color: #fff;
+}
+
+/*header*/
+header {
+  display: none;
+}
+header div {
+  color: #fff;
+}
+
+/* navbar */
+nav {
+  text-transform: uppercase;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav button > span > i {
+  color: #000 !important;
+}
+
+nav a {
+  color: #000 !important;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: blue !important;
+}
+
+.navbar-nav .dropdown-menu {
+  border: none !important;
+}
+
+.dropdown-item:hover {
+  background-color: transparent;
+}
+
+#sec-slider .slide .carousel-inner .carousel-item img {
+  height: 100vh;
+  width: 50%;
+}
+
+.carousel-indicators {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin-right: 0;
+  margin-bottom: 17rem;
+  margin-left: 90%;
+  list-style: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+}
+
+.carousel-item img {
+  height: 700px !important;
+}
+
+.carousel-caption {
+  margin-bottom: 200px !important;
+}
+
+.carousel-caption > h1 {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.carousel-caption > p {
+  margin-bottom: 30px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.carousel-caption > a {
+  border: thin solid #fff;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.carousel-caption > a:hover {
+  border: thin solid #0b60e1;
+  background-color: #0b60e1;
+}
+
+.a-active {
+  border: thin solid #0b60e1;
+  background-color: #0b60e1;
+}
+#aboutus .about-desc h1::after {
+  display: inline-block;
+  content: "";
+  width: 100px;
+  height: 3px;
+  background-color: blue;
+  margin-left: 30px;
+  margin-bottom: 10px;
+}
+
+#aboutus .about-desc h1::before {
+  display: inline-block;
+  content: "";
+  width: 100px;
+  height: 3px;
+  background-color: blue;
+  margin-right: 30px;
+  margin-bottom: 10px;
+}
+
+#aboutus article {
+  box-shadow: 0px 0px 13px 0px #000;
+  background-color: #fff;
+}
+
+#aboutus article .row:hover i,
+#aboutus article .row:hover h5 {
+  color: #0b60e1;
+}
+
+#blog .desc h1::after {
+  display: inline-block;
+  content: "";
+  width: 100px;
+  height: 3px;
+  background-color: blue;
+  margin-left: 30px;
+  margin-bottom: 10px;
+}
+
+#blog .desc h1::before {
+  display: inline-block;
+  content: "";
+  width: 100px;
+  height: 3px;
+  background-color: blue;
+  margin-right: 30px;
+  margin-bottom: 10px;
+}
+
+#blog .desc p {
+  color: rgb(134, 132, 132);
+}
+
+#blog .cards .card .card-body .icons {
+  background-color: #000;
+  margin-top: -16px;
+  margin-bottom: -16px;
+  margin-left: -4px;
+  border-radius: 0 0 0 3px;
+}
+
+#blog .cards .card .card-body .icons a i {
+  font-size: 1.5rem;
+}
+
+#blog .cards .card .card-body .content span {
+  font-size: 0.8rem;
+}
+
+#blog .cards .card .card-body .content span:first-of-type {
+  border-right: thin solid rgb(68, 68, 68);
+}
+
+#blog .cards .card .card-body .content .progress {
+  height: 3px;
+}
+
+#blog .cards .card .card-body .content a {
+  color: #000;
+}
+
+#blog .cards .card .img-holder {
+  overflow: hidden;
+}
+
+#blog .cards .card:hover img {
+  transform: scale(1.1) rotate(-2deg);
+}
+
+#blog .cards .card:hover .icons {
+  background-color: #0b60e1;
+}
+#blog .cards .card .progress-bar {
+  width: 25%;
+}
+
+#blog .cards .card:hover .progress-bar {
+  width: 100%;
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+}
+
+footer .two img {
+  max-width: 100%;
+}
+
+footer .two h6:hover {
+  color: rgb(141, 141, 141);
+  cursor: pointer;
+}
+
+footer .two p {
+  color: rgb(141, 141, 141);
+}
+
+footer .copyright {
+  color: #0b60e1;
+  font-weight: 600;
+  font-size: 1.3rem;
+  box-shadow: 0px -10px 10px -8px rgb(70, 70, 70);
+}
+
+footer .three a:hover {
+  color: #fff;
+  background-color: #0b60e1;
+  border-color: #0b60e1;
+}
+
+footer h1::after {
+  content: "";
+  display: block;
+
+  width: 85px;
+  height: 2px;
+  background-color: #0b60e1;
+  margin-top: 25px;
+}
+
+@media (min-width: 576px) {
+}
+@media (min-width: 768px) {
+  .carousel-caption > h1 {
+    display: none;
+  }
+
+  .carousel-caption > p {
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  header {
+    display: block;
+  }
+
+  .carousel-caption > h1 {
+    display: block;
+  }
+
+  .carousel-caption > p {
+    display: block;
+  }
+
+  #aboutus article {
+    position: relative;
+    left: 100px;
+  }
+}
+@media (min-width: 1200px) {
+}
